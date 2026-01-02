@@ -17,9 +17,6 @@ export const MoreProjects = ({
           Explore more projects
         </h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-          {projects.map((project) => {
-            return <ProjectCard project={project} key={project.slug} />
-          })}
         </div>
       </div>
     </div>
