@@ -22,31 +22,18 @@ export default function Home() {
       >
         <div className="container mt-20 flex flex-col items-center gap-8 text-center">
           <h1 className="font-medium text-5xl text-neutral-500">
-            Walter O’Brien
+            Hans-Peter Grahsl
             <br />
             <span className="font-normal text-white">
-              Technology Entrepreneur
+              Developer Advocate
             </span>
           </h1>
           <p className="max-w-lg font-medium text-lg text-neutral-250">
-            A globally recognized tech expert and entrepreneur, known for
-            leading advancements in cybersecurity, AI solutions, and strategic
-            consulting.
+            A passionate advocate for developer experience, I specialize in
+            creating seamless workflows and tools that empower developers to
+            excel in their craft.
           </p>
-          <Button>Let's work together</Button>
         </div>
-      </section>
-
-      {/* Projects */}
-      <section
-        id="projects"
-        className={cn(
-          'container relative z-10 mt-20 mb-30 grid scroll-m-12 grid-cols-1 place-content-center items-center gap-4 p-8 md:grid-cols-2',
-        )}
-      >
-        {allProjects.map((project) => {
-          return <ProjectCard project={project} key={project.slug} />
-        })}
       </section>
 
       {/* About */}
@@ -59,12 +46,7 @@ export default function Home() {
         <div className="col-span-1 space-y-3 md:col-span-8">
           <Badge>About me</Badge>
           <p className="font-medium text-neutral-250 text-xl">
-            A globally recognized tech expert and entrepreneur, known for
-            leading advancements in cybersecurity, AI solutions, and strategic
-            consulting. As the founder of Scorpion Computer Services, I made
-            headlines at 13 by hacking NASA’s servers. Today, I help
-            corporations and governments tackle complex security and tech
-            challenges.
+            Hans-Peter Grahsl is a Developer Advocate and open-source community enthusiast with a particular passion for event-driven architectures, distributed stream processing systems and data engineering. Until recently, he was with Decodable (acquired by Redis) and had previously worked at Red Hat in a similar role. For his code contributions, conference talks and blog post writing at the intersection of the Apache Kafka and MongoDB communities, Hans-Peter received multiple community awards and became one of the founding members of the MongoDB Champions Program in late 2020. He is a regular speaker at international developer and tech conferences for several years.
           </p>
         </div>
         <Image
@@ -72,31 +54,6 @@ export default function Home() {
           src={ProfilPhoto}
           alt=""
         />
-      </section>
-
-      {/* Experience */}
-      <section
-        className={cn(
-          'container relative z-10 mt-10 mb-20 space-y-8 divide-y divide-white/8 p-8',
-        )}
-      >
-        <Badge>Experience</Badge>
-        {experiences.map(({ title, years, company, description }) => {
-          return (
-            <div
-              className="grid grid-cols-1 justify-between gap-8 pb-8 md:grid-cols-12"
-              key={title}
-            >
-              <h3 className="col-span-4 font-medium text-white">{title}</h3>
-
-              <div className="col-span-8">
-                <span className="mb-2 font-medium text-white">{company}</span>
-                <p className="text-neutral-500">{years}</p>
-                <p className="mt-4">{description}</p>
-              </div>
-            </div>
-          )
-        })}
       </section>
     </>
   )

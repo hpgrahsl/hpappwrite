@@ -15,9 +15,9 @@ export const Header = () => {
           <Marble />
 
           <div className="flex flex-col">
-            <h1 className="font-medium text-white">Walter O'Brien</h1>
+            <h1 className="font-medium text-white">Hans-Peter Grahsl</h1>
             <span className="text-neutral-500 text-sm">
-              Technology Entrepreneur
+              Developer Advocate
             </span>
           </div>
         </Link>

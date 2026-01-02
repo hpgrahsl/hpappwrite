@@ -13,21 +13,21 @@ export default function Contact() {
 
         <div className="mt-8 flex gap-2">
           <a
-            href="https://github.com"
+            href="https://github.com/hpgrahsl"
             className="flex size-8 items-center justify-center rounded-lg border border-white/8 bg-neutral-850"
           >
             <GitHub />
           </a>
 
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/hpgrahsl/"
             className="flex size-8 items-center justify-center rounded-lg border border-white/8 bg-neutral-850"
           >
             <LinkedIn />
           </a>
 
           <a
-            href="mailto:walter@appwrite.io"
+            href="mailto:grahslhp+appwrite@gmail.com"
             className="flex size-8 items-center justify-center rounded-lg border border-white/8 bg-neutral-850"
           >
             <Email />
